@@ -169,3 +169,8 @@ chmod +x run.sh
 ```
 
 *(You can safely `Ctrl+C` this script at any time. Running it again will instantly resume exactly where it left off!)*
+
+---
+
+### Scrapper Headless = False
+![Gmaps-Extractor running visibly](../docs/assets/gmaps-extractor-headless-false.png)
