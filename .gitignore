@@ -1,0 +1,11 @@
+# Mac
+.DS_Store
+
+# VENV ENV
+.venv
+.env
+
+# Python
+__pycache__/
+
+# Data data
