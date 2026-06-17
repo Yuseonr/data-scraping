@@ -1,0 +1,22 @@
+{
+  "resolution": 9,
+  "cell_count": 3,
+  "source": "test_script",
+  "cells": [
+    {
+      "id": "898d8c6b583ffff",
+      "lat": -7.0288813,
+      "lng": 110.4108258
+    },
+    {
+      "id": "898d8c6b58bffff",
+      "lat": -7.0259069,
+      "lng": 110.4117737
+    },
+    {
+      "id": "898d8c6b593ffff",
+      "lat": -7.0309812,
+      "lng": 110.4129262
+    }
+  ]
+}

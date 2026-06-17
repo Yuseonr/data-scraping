@@ -1,0 +1,13 @@
+[project]
+name = "data-scraping"
+version = "0.1.0"
+description = "Data scraping tools for research and data-training"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "playwright>=1.59.0",
+    "h3>=4.0.0",
+    "geopandas>=1.1.0",
+    "shapely>=2.1.0",
+    "pandas>=2.0.0",
+]
