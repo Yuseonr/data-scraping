@@ -1,5 +1,4 @@
 import csv
-from pathlib import Path
 from collections import defaultdict
 
 from .schema import FIELDNAMES

@@ -1,6 +1,4 @@
 import asyncio
-import random
-from datetime import datetime
 
 from playwright.async_api import Page, TimeoutError as PlaywrightTimeout
 
@@ -231,6 +229,17 @@ async def extract_place(
             try:
                 raw = await reviews_el.inner_text()
                 total_reviews = int(raw.strip().replace("(", "").replace(")", "").replace(".", "").replace(",", ""))
+            except Exception:
+                pass
+        else:
+            # Fallback for when Google dynamically drops the aria-label attribute
+            try:
+                f7_el = await page.query_selector('div.F7nice')
+                if f7_el:
+                    raw_f7 = await f7_el.inner_text()
+                    if "(" in raw_f7 and ")" in raw_f7:
+                        raw_reviews = raw_f7.split("(")[1].split(")")[0]
+                        total_reviews = int(raw_reviews.strip().replace(".", "").replace(",", ""))
             except Exception:
                 pass
 
