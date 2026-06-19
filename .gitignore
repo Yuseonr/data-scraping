@@ -9,3 +9,7 @@
 __pycache__/
 
 # Data data
+gmaps-extractor/semarang_umkm_map.html
+
+# Unrelated files (For debug only)
+gmaps-extractor/visualize.py

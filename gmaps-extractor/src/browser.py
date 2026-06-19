@@ -3,7 +3,6 @@ import random
 
 from playwright.async_api import async_playwright, Browser, BrowserContext, Page
 
-
 class BrowserPool:
     def __init__(self, n_workers: int = 1, headless: bool = True, locale: str = "id-ID"):
         self.n_workers = n_workers

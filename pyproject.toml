@@ -10,4 +10,5 @@ dependencies = [
     "geopandas>=1.1.0",
     "shapely>=2.1.0",
     "pandas>=2.0.0",
+    "plotly>=6.8.0",
 ]

@@ -1,7 +1,5 @@
 import sqlite3
 from pathlib import Path
-from contextlib import contextmanager
-
 
 class StateDB:
     def __init__(self, path: str | Path):
