@@ -68,6 +68,7 @@ save_area_manifest(cells, resolution=9, path="area_manifest.json")
 - `output_path` (str): Path to the raw CSV dump file.
 - `n_workers` (int): How many concurrent browsers to launch.
 - `headless` (bool): `True` for invisible background scraping (faster). `False` if you want to watch the browsers.
+  > **Limitation**: When `headless=True`, Google Maps serves a limited UI that omits `total_reviews` and `price_level` data. To extract these specific fields, set `headless=False`.
 - `filter_address` (str, optional): A keyword to ensure places belong to the target city (e.g., `"semarang"`).
 - `retry_failed` (bool): If `True`, restarting the script will re-attempt any tasks that previously crashed/timed out.
 

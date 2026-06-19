@@ -39,7 +39,7 @@ async def main():
         keywords=keywords,
         db_path=str(db_path),
         output_path=str(output_path),
-        n_workers=5,
+        n_workers=3,
         headless=True,  
         filter_address="semarang",
         retry_failed=True  
