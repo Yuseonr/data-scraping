@@ -50,6 +50,7 @@ Before scraping, you must define *where* to search. The `area.py` module takes a
 
 **Arguments:**
 - `resolution` (int): Size of the hexagons. `9` is the recommended default (approx 0.1 km² per hex). `8` is larger, `10` is very fine.
+  > **Limitation (High-Density Areas)**: The hexgrid search may miss smaller places in extremely dense areas (like multi-story malls or packed food districts) because Google truncates coordinate searches to ~120 results. Increasing grid resolution does not fix this. 
 
 ```python
 from src.area import load_polygon, build_hex_grid, save_area_manifest
