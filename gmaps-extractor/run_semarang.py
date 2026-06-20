@@ -40,7 +40,7 @@ async def main():
         db_path=str(db_path),
         output_path=str(output_path),
         n_workers=3,
-        headless=True,  
+        headless=False,  
         filter_address="semarang",
         retry_failed=True  
     )
